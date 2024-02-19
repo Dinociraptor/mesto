@@ -1,0 +1,15 @@
+.popup__input-submit {
+    width: 358px;
+    height: 50.15px;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    line-height: 21.78px;
+    cursor: pointer;
+    border: 0;
+}
+
+.popup__input-submit:hover {
+    opacity: 0.8;
+    transition: 0.2s linear;
+}

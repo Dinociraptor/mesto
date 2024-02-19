@@ -1,0 +1,16 @@
+.profile__edit-button {
+    width: 24px;
+    height: 24px;
+    background-image: url(/mesto/images/edit_button.svg);
+    background-size: cover;
+    background-color: black;
+    border: 0;
+    cursor: pointer;
+    margin-top: 37px;
+    margin-left: 18px;
+}
+
+.profile__edit-button:hover {
+    opacity: 0.6;
+    transition: 0.2s linear;
+}

@@ -1,0 +1,16 @@
+.popup__close {
+    width: 32px;
+    height: 32px;
+    background-image: url(/mesto/images/close.png);
+    background-color: #11ffee00;
+    position: absolute;
+    top: -40px; 
+    right: -40px;
+    cursor: pointer;
+    border: 0;
+}
+
+.popup__close:hover {
+    opacity: 0.6;
+    transition: 0.2s linear;
+}

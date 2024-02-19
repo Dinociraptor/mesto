@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta title="viewport" content="width=device-width, initial-scale=1.0">
+  <meta title="description" content="Итерактивный блог и личный онлайн-фотоальбом">
+  <meta title="keywords" content="Mesto фотоальбом личный онлайн-фотоальбом">
+  <title>Mesto - интерактивный блог и личный онлайн-фотоальбом</title>
+  <link rel="stylesheet" href="pages/index.css">
+  <link rel="icon" href="images/palm.png">
+  <script defer src="pages/index.js"></script>
+</head>
+<body class="page">
+  <header class="header">
+    <img class="header__logo" src="images/logo.svg" alt="Место">
+  </header>
+  
+  <main class="content">
+    <section class="profile">
+      <div class="profile__avatar">
+        <img class="profile__image" src="" alt="">
+      </div>
+      <div class="profile__info">
+        <h1 class="profile__autor">Рыжий Котямба</h1>
+        <h2 class="profile__occupation">Мохнатый турист</h2>
+      </div>
+      <button class="profile__edit-button"></button>
+      <button class="profile__add-button"></button>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <img class="card__picture" src="images/baikal.png" alt="">
+        <div class="card__description">
+          <p class="card__title">Байкал</p>
+          <button class="card__like"></button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card__picture" src="images/beluha.png" alt="">
+        <div class="card__description">
+          <p class="card__title">Белуха</p>
+          <button class="card__like"></button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card__picture" src="images/ergaki.png" alt="">
+        <div class="card__description">
+          <p class="card__title">Ергаки</p>
+          <button class="card__like"></button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card__picture" src="images/kamchatka.png" alt="">
+        <div class="card__description">
+          <p class="card__title">Камчатка</p>
+          <button class="card__like"></button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card__picture" src="images/karelia.png" alt="">
+        <div class="card__description">
+          <p class="card__title">Карелия</p>
+          <button class="card__like"></button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card__picture" src="images/tokarev.png" alt="">
+        <div class="card__description">
+          <p class="card__title">Токаревский маяк</p>
+          <button class="card__like"></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__copyright">&copy; 2024 Dinociraptor</div>
+  </footer>
+  <div class="popup popup_profile-edit">
+    <div class="popup__container">
+      <div class="popup__close"></div>
+      <form class="popup__form" action="">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <div class="popup__input">
+          <input class="popup__input-text" type="text">
+          <input class="popup__input-text" type="text">
+          <input class="popup__input-submit" type="submit" value="Сохранить" >
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="popup popup_profile-add">
+    <div class="popup__container">
+      <div class="popup__close"></div>
+      <form class="popup__form" action="">
+        <h3 class="popup__title">Новое место</h3>
+        <div class="popup__input">
+          <input class="popup__input-text" type="text">
+          <input class="popup__input-text" type="text">
+          <input class="popup__input-submit" type="submit" value="Создать" >
+        </div>
+    </div>
+
+</body>
+</html>
