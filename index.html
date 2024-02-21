@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta title="viewport" content="width=device-width, initial-scale=1.0">
-  <meta title="description" content="Итерактивный блог и личный онлайн-фотоальбом">
-  <meta title="keywords" content="Mesto фотоальбом личный онлайн-фотоальбом">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Итерактивный блог и личный онлайн-фотоальбом">
+  <meta name="keywords" content="Mesto фотоальбом личный онлайн-фотоальбом">
   <title>Mesto - интерактивный блог и личный онлайн-фотоальбом</title>
   <link rel="stylesheet" href="pages/index.css">
   <link rel="icon" href="images/palm.png">
@@ -72,27 +72,28 @@
   <footer class="footer">
     <div class="footer__copyright">&copy; 2024 Dinociraptor</div>
   </footer>
-  <div class="popup popup_profile-edit">
+  <div class="popup popup_opened popup_profile-edit">
     <div class="popup__container">
-      <div class="popup__close"></div>
+      <div class="popup__close popup__close_edit"></div>
       <form class="popup__form" action="">
         <h3 class="popup__title">Редактировать профиль</h3>
         <div class="popup__input">
-          <input class="popup__input-text" type="text">
-          <input class="popup__input-text" type="text">
-          <input class="popup__input-submit" type="submit" value="Сохранить" >
+          <input class="popup__input-text popup__input_name" placeholder="Имя" type="text" required>
+          <input class="popup__input-text popup__input_occupation" placeholder="Род занятий" type="text" required>
+          <input class="popup__input-submit" type="submit" value="Сохранить">
         </div>
       </div>
     </form>
   </div>
-  <div class="popup popup_profile-add">
+  <div class="popup popup_opened popup_profile-add">
     <div class="popup__container">
-      <div class="popup__close"></div>
+      <div class="popup__close popup__close_add"></div>
       <form class="popup__form" action="">
         <h3 class="popup__title">Новое место</h3>
         <div class="popup__input">
-          <input class="popup__input-text" type="text">
-          <input class="popup__input-text" type="text">
+          <input class="popup__input-text popup__input_place" placeholder="Название места" type="text" required>
+          <input class="popup__input-text popup__input_description" placeholder="Описание" type="text" required>
+          <input class="popup__input-text popup__input_picture" placeholder="Ссылка на фотографию" type="url" required>
           <input class="popup__input-submit" type="submit" value="Создать" >
         </div>
     </div>

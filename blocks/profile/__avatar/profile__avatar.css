@@ -5,3 +5,9 @@
     background-size: cover;
     border-radius: 50%;
 }
+
+@media (max-width:767px) {
+    .profile__avatar {
+        align-self: center;
+    }
+}

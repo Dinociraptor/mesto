@@ -3,5 +3,20 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21.78px;
-    margin-top: 16px;
+    padding-top: 16px;
+    max-width: 500px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+}
+
+@media (max-width:767px) {
+    .profile__occupation {
+        padding-top: 14px;
+        font-size: 14px;
+        line-height: 16.94px;
+        align-self: center;
+        max-width: 220px;
+    }
 }

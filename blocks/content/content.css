@@ -1,6 +1,12 @@
 .content {
     margin: auto;
-    padding-top: 40px;
+    margin-top: 40px;
     max-width: 880px;
     justify-self: auto;
+}
+
+@media (max-width:767px) {
+    .content {
+        margin-top: 0px;
+    }
 }
