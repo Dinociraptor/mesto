@@ -13,7 +13,7 @@
 }
 
 .card__like:hover {
-    opacity: 1;
+    opacity: 0.9;
     transition: transform .3s ease-out;
     transform: scale(1.2);
 

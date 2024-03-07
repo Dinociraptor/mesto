@@ -16,7 +16,7 @@
   </header>
   <main class="content">
     <section class="profile">
-      <div class="profile__avatar"></div>
+      <img class="profile__avatar" src="/mesto/images/image.png" alt="Аватар">
       <div class="profile__info">
         <h1 class="profile__autor">Рыжий Котямба</h1>
         <h2 class="profile__occupation">Мохнатый турист</h2>
@@ -25,48 +25,6 @@
       <button class="profile__add-button"></button>
     </section>
     <section class="cards">
-      <div class="card">
-        <img class="card__picture" src="images/baikal.png" alt="Берег озера Байкал">
-        <div class="card__description">
-          <p class="card__title">Байкал</p>
-          <button class="card__like"></button>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card__picture" src="images/beluha.png" alt="Озеро на фоне горы Белухи">
-        <div class="card__description">
-          <p class="card__title">Белуха</p>
-          <button class="card__like"></button>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card__picture" src="images/ergaki.png" alt="Природный заповедник Ергаки">
-        <div class="card__description">
-          <p class="card__title">Ергаки</p>
-          <button class="card__like"></button>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card__picture" src="images/kamchatka.png" alt="Цветы на Камчатке">
-        <div class="card__description">
-          <p class="card__title">Камчатка</p>
-          <button class="card__like"></button>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card__picture" src="images/karelia.png" alt="Озеро в Карелии">
-        <div class="card__description">
-          <p class="card__title">Карелия</p>
-          <button class="card__like"></button>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card__picture" src="images/tokarev.png" alt="Вид на Токаревский маяк">
-        <div class="card__description">
-          <p class="card__title">Токаревский маяк</p>
-          <button class="card__like"></button>
-        </div>
-      </div>
     </section>
   </main>
   <footer class="footer">
@@ -80,6 +38,7 @@
         <div class="popup__input">
           <input class="popup__input-text popup__input_name" placeholder="Имя" type="text" required>
           <input class="popup__input-text popup__input_occupation" placeholder="Род занятий" type="text" required>
+          <input class="popup__input-text popup__input_avatar" placeholder="Ссылка на новую аватарку" type="url">
           <input class="popup__input-submit" type="submit" value="Сохранить">
         </div>
       </div>
@@ -94,9 +53,26 @@
           <input class="popup__input-text popup__input_place" placeholder="Название места" type="text" required>
           <input class="popup__input-text popup__input_description" placeholder="Описание" type="text" required>
           <input class="popup__input-text popup__input_picture" placeholder="Ссылка на фотографию" type="url" required>
-          <input class="popup__input-submit" type="submit" value="Создать" >
+          <input class="popup__input-submit" type="submit" value="Создать">
         </div>
     </div>
   </div>
+  <div class="popup popup_opened popup_image">
+    <div class="popup__container-image">
+      <div class="popup__close popup__close_image"></div>
+      <img class="popup__picture" src="" alt="">
+      <div class="popup__description"></div>
+    </div>
+  </div>
+  <template id="card-template">
+    <div class="card">
+      <img class="card__picture" src="" alt="">
+      <button class="card__trash"></button>
+      <div class="card__description">
+        <p class="card__title"></p>
+        <button class="card__like"></button>
+      </div>
+    </div>
+  </template>
 </body>
 </html>
