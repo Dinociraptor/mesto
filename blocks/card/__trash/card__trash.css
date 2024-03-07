@@ -1,0 +1,18 @@
+.card__trash {
+    background-image: url(/mesto/images/Trash.png);
+    width: 18px;
+    height: 19px;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: #ffffff00;
+    cursor: pointer;
+    border: 0;
+    position:absolute;
+    z-index: 1;
+    top: 20px; 
+    right: 20px;
+}
+
+.card__trash:hover {
+    opacity: 0.6;
+}
